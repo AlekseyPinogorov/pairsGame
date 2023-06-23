@@ -1,6 +1,5 @@
-/* eslint-disable import/extensions */
-// import Card from './card.js';
 import AmazingCard from './amazing-card.js';
+import Card from './card.js'
 
 function newGame(container, cardsCount) {
   let cardsNumberArray = [];
@@ -53,6 +52,11 @@ function newGame(container, cardsCount) {
       }, 300);
     }
   }
+
+  // for (const cardNumber of cardsNumberArray) {
+  //   const card = new Card(container, cardNumber, flip);
+  //   cardsArray.push(card);
+  // }
 
   for (const cardNumber of cardsNumberArray) {
     const card = new AmazingCard(container, cardNumber, flip);
